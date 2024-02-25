@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block head %}
+<link type="text/css" href="{{ url_for('about.static', filename='css/about.css') }}" rel="stylesheet">
+{% endblock head %}
+{% block body %}
+<div id="main_area">
+<h3 id="inrto_title">Why choose OpenVoiceOS?</h3>
+<p>Built on open-source software, OpenVoiceOS is designed to provide users with a seamless and intuitive voice interface for controlling their smart home devices, playing music, setting reminders, and much more.</p>
+<p>Open Source is at the heart of the OpenVoiceOS project, its built around all the awesome work done by developers from various open source projects.</p>
+<p>Whether you're a software developer, data scientist, or just someone with a passion for technology, you can get involved and help build the next generation of personal assistants and smart speakers that give you the freedom and control you deserve.</p>
+<div id="community_section">
+<h2 id="community_title" class="highlight_txt">Developed by the community</h2>
+<p id="community_content" class="dk_txt">Powered by developers around the globe from various Linux and Foss communities, An open platform for developers interested in making cutting edge voice assistance technology available to everyone</p>
+</div>
+<div id="diy_section">
+<h2 id="diy_title" class="highlight_txt">Do it YOURSELF!</h2>
+<p id="diy_content" class="dk_txt">Open Voice OS being a community platform is open to all developers and contributors wanting to support a specific device or a platform</p>
+</div>
+<div id="target_section">
+<h2 id="target_title" class="highlight_txt">Targeting ALL Platforms</h2>
+<p id="target_content" class="dk_txt">Embedded headless device or single board computers with screens to build a do it yourself smart speaker, Open Voice OS is the open community playground for all platforms to come and experiment at</p>
+</div>
+<div id="experimental_section">
+<h2 id="experimental_title" class="highlight_txt">Experimental at core</h2>
+<p id="experimental_content" class="dk_txt">Have an experimental feature you want users to experience before landing them into any of the Linux based open source voice assistant projects upstream ? Open Voice OS is the platform to throw your ideas at!</p>
+</div>
+{% endblock body %}

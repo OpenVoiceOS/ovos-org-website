@@ -1,0 +1,35 @@
+#button_links {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#documentation_button {
+    background: #425465;
+}
+
+#github_button {
+    background: #41807c;
+    margin-left: 4vw;
+}
+
+#discussions_button {
+    background: #515d83;
+    margin-left: 4vw;
+}
+
+#matrix_button {
+    background: #404040;
+    margin-left: 4vw;
+}
+
+.btn_links {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #e8e6e6;
+}
+
+.btn_links:hover {
+    border-color: #d42a2f;
+    border-width: 2px;
+    color: #e8e6e6;
+}

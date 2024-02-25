@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block head %}
+<link type="text/css" href="{{ url_for('home.static', filename='css/home.css') }}" rel="stylesheet">
+{% endblock head %}
+{% block body %}
+<div id="main_area">
+<h3 id="intro_title">Introducing OpenVoiceOS - The Free and Open-Source Personal Assistant and Smart Speaker.</h3>
+<p>OpenVoiceOS is a new player in the smart speaker market, offering a powerful and flexible alternative to proprietary solutions like Amazon Echo and Google Home.</p>
+<p>With OpenVoiceOS, you have complete control over your personal data and the ability to customize and extend the functionality of your smart speaker.</p>
+<p>Built on open-source software, OpenVoiceOS is designed to provide users with a seamless and intuitive voice interface for controlling their smart home devices, playing music, setting reminders, and much more.</p>
+<p>The platform leverages cutting-edge technology, including machine learning and natural language processing, to deliver a highly responsive and accurate experience.</p>
+<p>In addition to its voice capabilities, OpenVoiceOS features a touch-screen GUI made using QT5 and the KF5 framework.</p>
+<p>The GUI provides an intuitive, user-friendly interface that allows you to access the full range of OpenVoiceOS features and functionality.</p>
+<p>Whether you prefer voice commands or a more traditional touch interface, OpenVoiceOS has you covered.<p>
+<p>One of the key advantages of OpenVoiceOS is its open-source nature, which means that anyone with the technical skills can contribute to the platform and help shape its future.</p>
+<p>Whether you're a software developer, data scientist, someone with a passion for technology, or just a casual user that would like to experience what OVOS has to offer, you can get involved and help build the next generation of personal assistants and smart speakers.</p>
+<p>With OpenVoiceOS, you have the option to run the platform fully offline, giving you complete control over your data and ensuring that your information is never shared with third parties. This makes OpenVoiceOS the perfect choice for anyone who values privacy and security.</p>
+<p>So if you're looking for a personal assistant and smart speaker that gives you the freedom and control you deserve, be sure to check out OpenVoiceOS today!</p>
+<p>**Disclaimer**: This post was written in collaboration with ChatGPT</p>
+</div>
+<div id="button_links" class="container">
+<a href="https://openvoiceos.github.io/community-docs/" target="_blank">
+<button id="documentation_button" type="button" class="btn btn-lg btn_links">Documentation</button></a>
+<a href="https://github.com/OpenVoiceOS" target="_blank">
+<button id="github_button" type="button" class="btn btn-lg btn_links">Contribute</button></a>
+<a href="https://github.com/orgs/OpenVoiceOS/discussions" target="_blank">
+<button id="discussions_button" type="button" class="btn btn-lg btn_links">Discussions</button></a>
+<a href="https://matrix.to/#/#OpenVoiceOS-Support:matrix.org" target="_blank">
+<button id="matrix_button" type="button" class="btn btn-lg btn_links">Matrix Chat</button></a>
+</div>
+</div>
+{% endblock body %}
+

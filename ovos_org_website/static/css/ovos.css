@@ -1,0 +1,198 @@
+* {
+    font-family: soto, sans;
+}
+
+body {
+    background-image: linear-gradient(#414142, #adcce9);
+    height: 100vh;
+    width: 100vw;
+}
+
+/* COLORS */
+
+.lt_txt {
+    color: #FFF1F1;
+}
+
+.dk_txt {
+    color: #090a0b;
+/*    color: #243D3D;*/
+}
+
+.highlight_txt {
+    color: #FF1A1A;
+}
+
+.lt_bkgnd {
+    background-color: #FFF1F1;
+}
+
+.dk_bkgnd {
+    background-color: #243d3d;
+}
+
+.highlight_bkgnd {
+    background-color: #FF1A1A;
+}
+
+/* FONT SIZES */
+
+.x_sm_txt {
+    font-size: 5px;
+}
+
+.sm_txt {
+    font-size: 10px;
+}
+
+.std_txt {
+    font-size: 15px;
+}
+
+.lg_txt {
+    font-size: 20px;
+}
+
+/* BUTTONS */
+
+/*.btn {
+    background-color: #243D3D;
+    color: #FFF1F1;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #FFF1F1;
+    color: #243D3D;
+    border-color: #FF1A1A;
+}*/
+
+.btn_lt_bkgnd {
+    background-color: #243D3D;
+    color: #FFF1F1;
+    border-radius: 5px;
+}
+
+.btn_lt_bkgnd:hover {
+    background-color: #FF1A1A;
+    color: #243D3D;
+}
+
+.ovos_icon {
+    max-height: 32px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.round_corners {
+    border-radius: 5px;
+}
+
+.round_top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.pad_r_sm {
+    padding-right: 3px;
+}
+
+.scrolling_container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.bkend_dropdown {
+    max-width: 40vw;
+    white-space: normal;
+    /* For Firefox: */
+    text-overflow: ellipsis;
+}
+
+#navbar_link_text {
+    margin: auto;
+    font-size: 2.5vw;
+}
+
+#custom_header_inline {
+    display: inline-block;
+}
+
+#main_block {
+    width: 90vw;
+    border-radius: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#info {
+    margin: 8px;
+}
+
+#login_title {
+    width: 100%;
+}
+
+/*#navbar_img {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    width: 4vw;
+    margin-top: .4vw;
+    margin-bottom: .4vw;
+}*/
+
+#navbar_links {
+    margin-right: 2vw;
+}
+
+#navbar_header {
+    margin-left: 2vw;
+}
+
+#navbar_title {
+    font-size: 2vw;
+    margin: auto;
+    padding-left: 14vw;
+}
+
+#ovos_logo {
+    width: 25vw;
+}
+
+#main_content {
+    margin-top: 15vh;
+}
+
+#login_logout {
+    font-size: 2vw;
+    max-width: 25vw;
+}
+
+#media_body {
+    padding-left: 4vw;
+    padding-right: 30vw;
+    height: 90vh;
+    position: relative;
+}
+
+#media_content {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.media-body {
+    color: #e8e6e6;
+}
+
+.header_value {
+    border-bottom: 2px solid #243d3d;
+}
+
+.table_value {
+    border-bottom: 1px solid #243D3D;
+}

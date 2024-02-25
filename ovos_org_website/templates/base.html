@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>OpenVoiceOS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ovos.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/regular.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/solid.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/brands.min.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='js/brands.min.js') }}"></script>
+{% block head %}{% endblock head %}
+</head>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div id="navbar_header" class="navbar-header">
+<img id="navbar_img" class="navbar-brand" src="https://raw.githubusercontent.com/OpenVoiceOS/ovos_assets/master/Logo/Raw/ovos-mono-small-logo.svg"></img>
+<a class="navbar-brand" href="#">OpenVoiceOS</a>
+</div>
+<span id="navbar_title" class="navbar-text">{{ navbar_title_text }}</span>
+<ul id="navbar_links" class="nav navbar-nav navbar-right">
+<li><a href="{{ url_for('home.index') }}">Home</a></li>
+<li><a href="{{ url_for('about.index') }}">About</a></li>
+<li><a href="{{ url_for('downloads.index') }}">Downloads</a></li>
+<li><a href="https://github.com/orgs/OpenVoiceOS/discussions" target="_blank">Discussions</a></li>
+<li><a href="https://matrix.to/#/#OpenVoiceOS-Support:matrix.org" target="_blank">Matrix Chats</a></li>
+<li><a href="https://community.openconversational.ai/categories" target="_blank">Forums</a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="https://neon.ai/" target="_blank">Neon AI</a></li>
+</ul>
+</li>
+<li><a href="#">OVOS Team</a></li>
+</ul>
+</div>
+</nav>
+<body>
+<div id="main_content" class="media">
+<div class="media-left media-middle">
+<img id="ovos_logo" src="https://raw.githubusercontent.com/OpenVoiceOS/ovos_assets/master/Logo/Raw/ovos-logo(3).svg" class="media-object">
+</div>
+<div id="media_body" class="media-body container">
+<div id="media_content">
+<h2 id="ovos_header" class="media-heading">{{ page_title_text }}</h2>
+{% block body %}{% endblock body %}
+</div>
+</div>
+</div>
+</body>
+</html>
